@@ -10,13 +10,36 @@
     </head>
     <body>
         <div class="page-header">
-            <h1><a href="">No-shutdown</a></h1>
-        </div>
+				<h1><a href=""></a></h1>
+		</div>
 
-		<div class="content container">
-			<div class="row">
-				<div class="col-md-8">
-					{% for post in posts %}
+		<div class="content_container">
+			<div class="menu">
+				
+				<a href="/">Home</a>
+				<a  href="/about">About</a>
+				<a href="/sections">Sections</a>
+				<a href="/resources">Resources</a>
+				<a href="/submit">Submit</a>
+				<a href="/advertising">Advertising</a>
+				<a href="/contact">Contact</a>
+				<a href="/FAQ">FAQ</a>
+			</div>
+			<div class="post_content">
+				<div class="droite">
+					<div class="Archive">
+						<div class="title_right">
+							<h2>Archive</h2>
+						</div>
+					</div>
+					<div class="blog">
+						<div class="title_right">
+							<h2>Blog</h2>
+						</div>
+					</div>
+				</div>
+					<div class="col-md-8">
+						{% for post in posts %}
 						<div class="post">
 							<h1><a href="">{{ post.title }}</a></h1>
 							<p>{{ post.text|linebreaksbr }}</p>
